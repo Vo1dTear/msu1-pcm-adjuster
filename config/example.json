@@ -1,17 +1,14 @@
 {
-    "output_dir": "./adjusted",  // Folder where adjusted PCM files will be saved
-    "metadata_mode": "global",    // Metadata storage mode:
-                                  // "global"     → single metadata file for all JSON configs
-                                  // "per_config" → separate metadata file per config, named after the JSON
-                                  // "<custom_path>" → use a custom folder, metadata file will be named after the JSON
+    "output_dir": "./adjusted",
+    "metadata_mode": "global",
     "files": [
         {
-            "path": "./tracks/intro.pcm",  // Path to the PCM file to adjust
-            "factor": 0.8                  // Linear volume multiplier (1.0 = original volume)
+            "path": "./tracks/intro.pcm",
+            "factor": 0.8
         },
         {
             "path": "./tracks/battle_theme.pcm",
-            "db": -3                       // Volume adjustment in decibels (overrides factor if specified)
+            "db": -3
         }
     ]
 }
